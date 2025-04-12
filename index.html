@@ -55,11 +55,15 @@ input[type="checkbox"] + label {
   line-height: 30vmin;
   display: inline-block;
   position: absolute;
-  font-size: 3vw;
+  font-size: 10vw;
   text-align: center;
   transition: all 1s ease;
 }
-
+@media(min-width:1024px){
+    input[type="checkbox"] + label {
+        font-size: 3vw;
+    }
+}
 label {
   text-shadow: 3vmin 3vmin 10vmin rgba(0,0,0,0.5);
 }
